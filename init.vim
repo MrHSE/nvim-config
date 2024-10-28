@@ -215,7 +215,7 @@ local buf_map = function(bufnr, mode, lhs, rhs, opts)
     })
 end
 
-nvim_lsp.tsserver.setup({
+nvim_lsp.ts_ls.setup({
     on_attach = function(client, bufnr)
         client.server_capabilities.document_formatting = false
         client.server_capabilities.document_range_formatting = false
